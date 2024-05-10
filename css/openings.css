@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+}
+
+/* Banner */
+.bannerImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../media/openings/Banner.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+#bannerDiv{
+    height: 300px;
+}
+
+/* Banner Text */
+.text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+.text h1 {
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 20px;
+}
+
+/* row container */
+.row {
+    padding: 50px;
+}
+
+/* Application Form Styling */
+#applicationForm {
+    /* Define strict tables for consistent form formatting */
+    form  { display: table;      }
+    p     { display: table-row;  }
+    label { display: table-cell; }
+    input { display: table-cell; }
+    padding: 5px;
+    display: flex;
+    align-content: center;
+}
+
+#applicationForm label{
+    font-weight: bold;
+}
+
+#applicationSubmit{
+    width: 200px;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-md-6 h2 {
+    text-align: center;
+}
+
+/* The card displaying the job information */
+#jobCard {
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+/* Heading text of card */
+#jobCard h5 {
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+    color: black;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#jobCard p {
+    margin-bottom: 0.2rem;
+    padding: 5px;
+}
+
+#jobLocation {
+    font-size: 12px;
+}
+
+#jobTime {
+    font-size: 0.8em;
+    margin-top: 0px;
+}
+
+#jobCardButton {
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+    color: black;
+    border: none;
+}
+
+/* Quick fix for second column */
+.col-md-5 {
+    width: 50% !important;
+}
+
+.col-md-5 h2 {
+    text-align: center;
+}
+
+/* Modal Styling */
+
+.modal-header {
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+}
+
+/* The resultWindow formatting */
+#resultWindow{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Remove the banner when page screen is small */
+@media only screen and (max-width: 700px){
+    .bannerImage {
+        background-image: none;
+        height: 0px;
+    }
+
+    .text {
+        display: none;
+    }
+}
+
+/* Fix column width on smaller resolution */
+@media only screen and (max-width: 767px){
+    .col-md-5 {
+        width: auto !important;
+    }
+}

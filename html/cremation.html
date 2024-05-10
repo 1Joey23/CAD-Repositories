@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cremation Service</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- The great gradient styles in here -->
+  <link href="../css/gradient.css" rel="stylesheet">
+
+  <!-- JS scripts -->
+  <!-- for the services page, make sure the service bar is loaded before the nav bar -->
+  <script src="../js/servicebar.js"></script>
+  <script src="../js/navbar.js"></script>
+  <link rel="icon" type="image/x-icon" href="../media/brand/logo1.png">
+</head>
+
+<body>
+
+  <!-- A style to help see what section you're on -->
+  <style>
+    #cremationNavItem{
+        color: black;
+        text-decoration: underline;
+    }
+  </style>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Our Service</h2>
+        <p class="fs-5">Pawsitively Yours provides compassionate and professional pet cremation services. We
+          understand the love and bond you shared with your beloved pet, and we strive to provide a dignified
+          farewell.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Our Services</h2>
+        <ul>
+          <li class="fs-5">Pet Cremation</li>
+          <li class="fs-5">Memorial Urns</li>
+          <li class="fs-5">Keepsake Jewelry</li>
+          <li class="fs-5">Grief Support</li>
+        </ul>
+        <button type="button" class="btn btn-primary mt-3 pinkGradientButton" data-bs-toggle="modal"
+          data-bs-target="#cremationRequestModal">
+          Request Service
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+
+      <div class="col-md-6">
+        <img src="../media/cremation/box.png" alt="Placeholder Image" class="img-fluid">
+      </div>
+
+      <!-- Urn Section -->
+      <div class="col-md-6">
+        <h2>Explore Our Urns and vessels</h2>
+        <p class="fs-5">We offer a variety of memorial urns and vessels to cherish the memories of your beloved pets.
+        </p>
+        <button type="button" class="btn btn-primary pinkGradientButton" data-bs-toggle="modal"
+          data-bs-target="#urnSelectionModal">
+          View Urns and Vessels
+        </button>
+        <!-- Fee section -->
+        <div class="mt-4">
+          <h2>Estimated Pricing</h2>
+          <p class="fs-5">Cremation cost depends of weight of animal
+          </p>
+          <p class="fs-5">Here is a quick estimate:
+          </p>
+          <ul>
+            <li class="fs-5">75-100 Pounds - ~$200</li>
+            <li class="fs-5">100-125 Pounds - ~$225</li>
+            <li class="fs-5">125-150 Pounds - ~$250</li>
+            <li class="fs-5">150+ Pounds - ~$250+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Modal -->
+  <div class="modal fade" id="cremationRequestModal" tabindex="-1" aria-labelledby="cremationRequestModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cremationRequestModalLabel">Request Cremation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="petName" class="form-label">Pet's Name</label>
+              <input type="text" class="form-control" id="petName" required>
+            </div>
+            <div class="mb-3">
+              <label for="ownerName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="ownerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactInfo" class="form-label">Contact Information</label>
+              <input type="text" class="form-control" id="contactInfo" required>
+            </div>
+            <div class="mb-3">
+              <label for="additionalInfo" class="form-label">Additional Information</label>
+              <textarea class="form-control" id="additionalInfo" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary pinkGradientButton">Submit Request</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Style for urn images -->
+  <style>
+    .rounded-gray-border {
+      border: 2px solid #bbbec0;
+      border-radius: 10px;
+    }
+  </style>
+
+  <!-- Urn Modal -->
+  <div class="modal fade" id="urnSelectionModal" tabindex="-1" aria-labelledby="urnSelectionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="urnSelectionModalLabel">Our Vessel Selection</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <img src="../media/cremation/box.png" alt="Urn 1" class="img-fluid rounded-gray-border pinkGradient">
+              <p class="fs-5">Wooden crate with image, quote, and dates.<br> Price: $99.99</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <img src="../media/cremation/urn.png" alt="Urn 2" class="img-fluid rounded-gray-border pinkGradient">
+              <p class="fs-5">Metal urn with paw prints.<br> Price: $134.99</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <img src="../media/cremation/cylinder.png" alt="Urn 3" class="img-fluid rounded-gray-border pinkGradient">
+              <p class="fs-5">Cylindrical box with quote plaque and image lid.<br> Price: $84.99</p>
+            </div>
+          </div>
+          <p class="fs-5">*All Urns and Vessels are sold in house at our physical location upon ash pickup</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.pinkGradient{
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+}
+
+.pinkGradientButton{
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+    border-color: rgb(255,176,189);
+    color: black;
+    font-size: 1.1em;
+}
+
+.pinkGradientButton:hover{
+    background-image: linear-gradient(to right, rgb(255,176,189), rgb(254,194,160));
+    border-color: black;
+    color: white;
+    font-size: 1.1em;
+}
