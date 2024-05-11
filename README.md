@@ -5,7 +5,8 @@ TO RUN EFFECIVELY, FOLLOW DIRECTIONS:
 4. Run with Five Server (Download Extension if need in VS Code)
 
 IMAGE EXAMPLE
-https://github.com/1Joey23/Pawsitively-Yours/assets/136002112/ab01bfc5-2fc9-4ca6-91a9-1f8a3605ceda
+https://github.com/1Joey23/Pawsitively-Yours/assets/136002112/8d02c7d1-1019-4f15-a2bb-7f7a6ec32cb6
+
 
 
 Hello User!
