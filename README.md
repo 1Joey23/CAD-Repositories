@@ -3,7 +3,9 @@ TO RUN EFFECIVELY, FOLLOW DIRECTIONS:
 2. Open folder in VS Code
 3. Right click on the nested index.html or other nexted html file
 4. Run with Five Server (Download Extension if need in VS Code)
-https://github.com/1Joey23/Pawsitively-Yours/assets/136002112/86b990ab-e702-4883-bcf1-d401ffc97496
+
+IMAGE EXAMPLE
+https://github.com/1Joey23/Pawsitively-Yours/assets/136002112/ab01bfc5-2fc9-4ca6-91a9-1f8a3605ceda
 
 
 Hello User!
