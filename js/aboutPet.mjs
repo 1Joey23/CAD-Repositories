@@ -21,7 +21,7 @@ function CreateSelectedAnimalPage() {
                 document.getElementById('animalBreed').textContent = 'Breed: ' + animal.animalBreed;
                 document.getElementById('animalAge').textContent = 'Age: ' + animal.animalAge;
                 document.getElementById('animalGender').textContent = 'Gender: ' + animal.animalGender;
-                document.getElementById('animalImg').src = `https://1joey23.github.io/Pawsitively-Yours/media/animals/${animal.animalType}/${animal.animalImageID}.jpg`;
+                document.getElementById('animalImg').src = `../media/animals/${animal.animalType}/${animal.animalImageID}.jpg`;
                 document.getElementById('animalDescription').textContent = animal.animalDescription;
 
             }});
